@@ -56,9 +56,9 @@ class sidebar_stats_widget extends WP_Widget {
 
 		echo $before_widget;
 		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
-		echo $beforeStat . $authorCount . $afterStat . " Author<br>";
-		echo $beforeStat . $postCount . $afterStat . " Total posts<br>";
-		echo $beforeStat . $commentCount . $afterStat . " Comments";
+		echo "<strong>" . $beforeStat . $authorCount . $afterStat . "</strong> Author<br>";
+		echo "<strong>" . $beforeStat . $postCount . $afterStat . "</strong> Total posts<br>";
+		echo "<strong>" . $beforeStat . $commentCount . $afterStat . "</strong> Comments";
 		echo $after_widget;
 	}
 }
